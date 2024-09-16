@@ -15,6 +15,13 @@ RUN \
   else echo "Lockfile not found." && exit 1; \
   fi
 
+RUN \
+  if [ -f yarn.lock ]; then yarn run postinstall; \
+  elif [ -f package-lock.json ]; then npm run postinstall; \
+  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run postinstall; \
+  else echo "Lockfile not found." && exit 1; \
+  fi
+
 
 # Rebuild the source code only when needed
 FROM base AS builder

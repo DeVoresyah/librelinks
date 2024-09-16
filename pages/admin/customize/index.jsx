@@ -9,7 +9,7 @@ const Customize = () => {
   return (
     <>
       <Head>
-        <title>Librelinks | Customize</title>
+        <title>Bisa.ae | Customize</title>
       </Head>
       <Layout>
         <div className="w-full lg:basis-3/5 pl-4 pr-4 border-r overflow-auto">

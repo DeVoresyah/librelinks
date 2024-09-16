@@ -131,9 +131,9 @@ const PreviewMobile = ({ close }) => {
               <Link
                 className="font-semibold"
                 target="_blank"
-                href="https://twitter.com/NerdyProgramme2"
+                href="https://bisa.ae"
               >
-                Librelinks
+                Bisa.ae
               </Link>
             </p>
           </footer>
