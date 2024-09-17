@@ -143,12 +143,14 @@ const ProfilePage = () => {
             {fetchedUser?.name}
           </p>
           {fetchedUser?.bio && (
-            <p
-              style={{ color: theme.accent }}
-              className="px-6 truncate text-center text-sm mt-1 mb-4 lg:text-xl lg:mb-4 lg:w-[600px] "
-            >
-              {fetchedUser?.bio}
-            </p>
+            <div className='px-8'>
+              <p
+                style={{ color: theme.accent }}
+                className="truncate text-center text-sm mt-1 mb-4 lg:text-xl lg:mb-4 lg:w-[600px] "
+              >
+                {fetchedUser?.bio}
+              </p>
+            </div>
           )}
           <div className="min-w-max flex flex-wrap gap-2 mb-8 lg:w-fit lg:gap-4">
             {userLinks
