@@ -146,7 +146,7 @@ const ProfilePage = () => {
             <div className='px-8 flex flex-wrap lg:mb-4 mt-1 mb-4'>
               <p
                 style={{ color: theme.accent }}
-                className="truncate text-center text-sm lg:text-xl"
+                className="flex flex-wrap text-center text-sm lg:text-xl"
               >
                 {fetchedUser?.bio}
               </p>
